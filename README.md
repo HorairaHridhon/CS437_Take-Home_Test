@@ -55,14 +55,7 @@ The dataset contains 59 columns, including nutritional information such as:
 
 ## Steps to Run the Project
 
-### 1. Clone the Repository
-
-```bash
-git clone <repository-url>
-cd <repository-folder>
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 Ensure you have Python and the necessary libraries installed:
 
@@ -70,13 +63,13 @@ Ensure you have Python and the necessary libraries installed:
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-### 3. Launch the Jupyter Notebook
+### 2. Launch the Jupyter Notebook
 
 ```bash
 jupyter notebook cs437_take_home_test.ipynb
 ```
 
-### 4. Follow the Notebook
+### 3. Follow the Notebook
 
 Execute each cell to perform the following:
 
