@@ -13,14 +13,14 @@ The primary objective is to classify food categories such as 'Baked Products', '
 1. **Data Cleaning**: Handling missing values and dropping less informative features.
 2. **Feature Selection**: Dropping highly correlated features based on correlation analysis.
 3. **Model Training**: Using multiple classifiers like Logistic Regression, KNN, Naive Bayes, Decision Trees, and Random Forest.
-4. **Hyperparameter Tuning**: Using `GridSearchCV` for optimizing model parameters.
+4. **Hyperparameter Tuning**: Using `RandomizedSearchCV` for optimizing model parameters.
 5. **Evaluation**: Measuring performance with the Weighted F1 Score to handle class imbalance.
 
 ---
 
 ## Files
 
-- **`cs437_midterm_instructions_followed.ipynb`**: Jupyter Notebook with the complete implementation.
+- **`cs437_take_home_test.ipynb`**: Jupyter Notebook with the complete implementation.
 - **`foodstruct_nutritional_facts.csv`**: Nutritional dataset for various food items.
 
 ---
@@ -48,7 +48,7 @@ The dataset contains 59 columns, including nutritional information such as:
 - Seafood
 
 ### Handling Missing Values
-- Columns with excessive missing values (more than 50%) were dropped.
+- Columns with excessive missing values (more than 1000) were dropped.
 - For remaining features, missing values were filled with the mean or zero, depending on the extent of missing data.
 
 ---
@@ -73,7 +73,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 ### 3. Launch the Jupyter Notebook
 
 ```bash
-jupyter notebook cs437_midterm_instructions_followed.ipynb
+jupyter notebook cs437_take_home_test.ipynb
 ```
 
 ### 4. Follow the Notebook
@@ -83,7 +83,7 @@ Execute each cell to perform the following:
 1. **Load the Data**: Import the dataset and explore its structure.
 2. **Data Preprocessing**: Handle missing values and perform feature selection.
 3. **Model Training**: Train models using Logistic Regression, KNN, Decision Trees, Random Forest, and Naive Bayes.
-4. **Hyperparameter Tuning**: Optimize models using `GridSearchCV`.
+4. **Hyperparameter Tuning**: Optimize models using `RandomizedSearchCV`.
 5. **Evaluation**: Evaluate the best model using the Weighted F1 Score.
 
 ---
@@ -166,5 +166,7 @@ Techniques such as **SMOTE (Synthetic Minority Over-Sampling Technique)** or und
 ---
 
 ## License
-
 This project is licensed under the MIT License.
+
+## Acknowledgments
+- Dataset Source: [Kaggle - Food Nutritional Facts](https://www.kaggle.com/datasets/beridzeg45/food-nutritional-facts)
